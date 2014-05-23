@@ -2,6 +2,13 @@ apply plugin: 'java'
 
 xlDeployServerLib = new File(new File(xlDeployServerHome), 'lib').path
 
+repositories {
+	flatDir {
+		dirs xlDeployServerLib
+	}
+}
+
 dependencies {
-	compile fileTree(dir: xlDeployServerLib, include: '*.jar')
+	compile ':guava:16+'
+	compile ':udm-plugin-api:4.0+'
 }
