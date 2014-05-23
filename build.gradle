@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+xlDeployServerLib = new File(new File(xlDeployServerHome), 'lib').path
+
+dependencies {
+	compile fileTree(dir: xlDeployServerLib, include: '*.jar')
+}
