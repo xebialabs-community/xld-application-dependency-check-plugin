@@ -2,6 +2,8 @@ apply plugin: 'java'
 
 xlDeployServerLib = new File(new File(xlDeployServerHome), 'lib').path
 
+version = '0.0.2'
+
 repositories {
 	flatDir {
 		dirs xlDeployServerLib
